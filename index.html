@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="boton">Boton</button>
+   <input type="text" id="input">
+
+   <input type="text" onchange="alert(this.value)">
+    <input type="button" value="Button">
+
+  
+ 
+
+  
+   
+
+
+
+        
+     <script>
+        
+        alert("bienvenido ganadores");
+        var numero = 5;
+        var numero_2 = 6;
+        suma = numero + numero_2;
+        console.log(suma);
+
+        var estudiantes = [20, 30, 40]
+        console.log(estudiantes [0]);
+
+        var contar = "Angel";
+        console.log(contar.length);
+
+
+        var panas = [1, 2, 3 , 4];
+        for (var i = 0; i < panas.length; i++ ) {
+            console.log(panas[i]);
+        }
+        var numero = prompt("edad");
+        if (numero > 18 ){
+            console.log("puede conducir");
+        }else {
+            console.log("no puede conducir");
+        }
+
+
+
+         numero1 = prompt("numero 1");
+         numero2 = prompt("numero 2");
+        if (numero1 > numero2){
+            console.log("es mayor numero "+numero1+ "y menor"+numero2);
+        }else {
+            console.log("es mator numero "+numero2+ "y menor"+numero1);
+
+        }
+            
+        num1 = prompt("numero 1");
+        num2 = prompt("numero 2");
+        for(var i = num1; i <= num2; i++){
+            console.log(i);
+        }
+
+        var array = [1, 2, 3, 4];
+        
+            console.log(array[3]);
+
+        var n = prompt("ingrese numero");
+        for (var i = 0; i <= 10; i++){
+            console.log((n*i));
+        }
+         var p = prompt("ingrese numero");
+         if (p % 2 == 0){
+            console.log("es par");
+         }else {
+            console.log("es impar");
+         }
+
+
+         var b = prompt("numero");
+         var c = prompt("numero");
+         var vector = [b,c];
+         console.log(vector[1,2]);
+
+
+         
+
+      
+
+
+
+
+
+        (function(){
+            var saludo = function(){
+                console.log("saludo");
+            }
+           
+
+            var boton = document.getElementById("boton");
+            boton.addEventListener("click", saludo);
+
+        
+            }())
+
+            var input = document.getElementById('input');
+            input.addEventListener('mouseover', function() {
+            alert('Has pasado el ratón encima de la imagen');
+            })
+
+            
+            
+           
+                
+         
+        
+
+        
+
+    </script> 
+</body>
+</html>
