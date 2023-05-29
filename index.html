@@ -116,10 +116,104 @@
             
            
                 
-         
+         //ejercicio
         
+            function Texto() {
+            var Texto_ob = $("#Texto_v").val();
+            var Con_1 = 0;
+            var Con_2 = 0;
+            var Con_3 = 0;
+            var Con_4 = 0;
+            var Con_5 = 0;
+            var Vacio = 0;
+
+            var Array = Texto_ob.split("");
+
+            for(let i = 0; i < Array.length; i++) {
+                if(Array[i].toUpperCase() == "A") {
+                    Con_1++;
+                }
+                if(Array[i].toUpperCase() == "E") {
+                    Con_2++;
+                }
+                if(Array[i].toUpperCase() == "I") {
+                    Con_3++;
+                }
+                if(Array[i].toUpperCase() == "O") {
+                    Con_4++;
+                }
+                if(Array[i].toUpperCase() == "U") {
+                    Con_5++;
+                }
+                if(Array[i].toUpperCase() == " ") {
+                    Vacio++;
+                }
+            }
+
+            $("#Label1").show();
+            $("#Label2").show();
+            $("#Label3").show();
+            $("#Label4").show();
+            $("#Label5").show();
+
+            if(Con_1 == 0) {
+                $("#Label1").html("a = no tiene")
+            }else{
+                $("#Label1").html("a = "+ Con_1)
+            }
+            if(Con_2 == 0) {
+                $("#Label2").html("e = no tiene")
+            }else{
+                $("#Label2").html("e = "+ Con_2)
+            }
+            if(Con_3 == 0) {
+                $("#Label3").html("i = no tiene")
+            }else{
+                $("#Label3").html("i = "+ Con_3)
+            }
+            if(Con_4 == 0) {
+                $("#Label4").html("o = no tiene")
+            }else{
+                $("#Label4").html("o = "+ Con_4)
+            }
+            if(Con_5 == 0) {
+                $("#Label5").html("u = no tiene")
+            }else{
+                $("#Label5").html("u = "+ Con_5)
+            }
+
+            if(Vacio == Array.length){ 
+                $("#Label1").hide();
+                $("#Label2").hide();
+                $("#Label3").hide();
+                $("#Label4").hide();
+                $("#Label5").hide();
+                console.log("Esconde");
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'texto en Blanco!',
+                    timer: 2000,
+                    showConfirmButton: true
+                })
+            }
+
+            console.log(Texto_ob);
+            console.log(Array);
+        }
+
+    </script>
 
         
+
+
+
+
+
+
+
+
 
     </script> 
 </body>
